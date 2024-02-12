@@ -44,7 +44,7 @@ public class Ejercicio_A5 {
 			for (int j = 0; j < temperaturas[0].length; j++) {
 				suma += temperaturas[i][j];
 			}
-			double media = suma / temperaturas[0].length;
+			double media = suma / 30;
 			System.out.println(media);
 		}
 

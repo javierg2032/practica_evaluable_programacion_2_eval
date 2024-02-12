@@ -14,7 +14,6 @@ public class Ejercicio_A4 {
 		System.out.println("Introduce la longitud del array: ");
 		int longitud = sc.nextInt();
 		int n = 0;
-		boolean esConsecutivo = false;
 
 		while (longitud < 2) { // longitud array
 			System.out.println("La longitud del array no es válida, como mínimo debe almacenar 2 numeros enteros: ");
