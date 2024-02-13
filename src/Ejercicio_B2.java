@@ -20,9 +20,9 @@ public class Ejercicio_B2 {
 		char t[] = duracion.toCharArray();
 		for (int i = 0; i < t.length; i++) {
 			if (t[i] != ':') {
-				cantidadMinutos++;
+				cantidadMinutos++; //cuenta los digitos de los minutos
 			} else {
-				break;
+				break; //en cuanto llegue a : sale del bucle
 			}
 		}
 
