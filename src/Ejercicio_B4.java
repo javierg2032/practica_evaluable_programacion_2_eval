@@ -1,7 +1,10 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ejercicio_B4 {
+public class Ejercicio_B4 { // Escribe una función que tome como parámetro una cadena y devuelva la cadena
+							// ordenada por la longitud de las palabras que la forman, desde la más corta a
+							// la más larga. Si dos palabra tienen la misma longitud entonces se ordenarán
+							// alfabéticamente
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduce la frase: ");
@@ -11,7 +14,6 @@ public class Ejercicio_B4 {
 
 	}
 
-	
 	public static String ordenarPorLongitud(String cadena) {
 		int cantidad = 0;
 		int letras = 0;

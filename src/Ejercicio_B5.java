@@ -1,7 +1,10 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ejercicio_B5 {
+public class Ejercicio_B5 {// Escribe una función que tome como parámetro una cadena y devuelva un array en
+							// el que una letra mayúscula represente a una persona levantada. La cadena de
+							// entrada debe estar en minúsculas. Si la letra es un espacio en blanco
+							// entonces se pasa a la siguiente letra
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
