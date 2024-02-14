@@ -16,9 +16,9 @@ public class Ejercicio_B1 {
 
 	public static int cuentaPalabras(String cadena) {
 		int cantidad = 0;
-		char frase[] = cadena.toCharArray();
+		char frase[] = cadena.toCharArray(); //convierte la cadena en un array de chars
 		for (int i = 0; i < frase.length; i++) {
-			if (frase[i] == ' ') {
+			if (frase[i] == ' ') { //por cada espacio que encuentra aumenta el numero de palabras
 				cantidad++;
 			}
 			if (i == frase.length - 1) { // cuenta la ultima palabra de la frase

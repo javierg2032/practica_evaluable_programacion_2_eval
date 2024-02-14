@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Ejercicio_A5 {
 
 	public static void main(String[] args) {
@@ -39,10 +41,10 @@ public class Ejercicio_A5 {
 				{ 14, 13, 15, 14, 13, 15, 14, 13, 15, 14, 13, 15, 14, 13, 15, 14, 13, 15, 14, 13, 15, 14, 13, 15, 14,
 						13, 15, 14, 13, 15 } };
 
-		for (int i = 0; i < temperaturas.length; i++) {
+		for (int i = 0; i < temperaturas.length; i++) { // recorre el mes
 			int suma = 0;
-			for (int j = 0; j < temperaturas[0].length; j++) {
-				suma += temperaturas[i][j];
+			for (int j = 0; j < temperaturas[0].length; j++) { // recorre los dias
+				suma = suma + temperaturas[i][j];
 			}
 			double media = suma / 30;
 			System.out.println(media);
@@ -72,6 +74,12 @@ public class Ejercicio_A5 {
 				}
 			}
 		}
+
+		// tanto en la temperatura mas calida como la mas fria solo me fijo en la
+		// primera que encuentro
+
 		System.out.println("El dia mas frio del año fue el " + diaMasFrio + " del mes " + mesMasFrio);
+
 	}
+
 }

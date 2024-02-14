@@ -34,7 +34,6 @@ public class Ejercicio_A4 {
 					if (t[j] == n) {
 						repetido = true;
 						System.out.println("Este número ya ha sido introducido. Introduce otro número: ");
-						break;
 					}
 				}
 			} while (repetido == true);
@@ -46,7 +45,8 @@ public class Ejercicio_A4 {
 		System.out.println(consecutivos(t));
 	}
 
-	public static Integer consecutivos(int t[]) {
+	public static Integer consecutivos(int t[]) { // Integer en lugar de int porque era la unica forma de que devolviese
+													// null
 		boolean esConsecutivo = true;
 		int n = 0;
 

@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class Ejercicio_B2 {
+public class Ejercicio_B2 { // Escribe una función que tome como argumento la cadena que representa la
+							// longitud de un video en minutos en formato mm:ss y la devuelva en segundos ss
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -17,12 +18,12 @@ public class Ejercicio_B2 {
 		int sumaMinutos = 0;
 		int sumaSegundos = 0;
 		int convierteMinutos = 0;
-		char t[] = duracion.toCharArray();
+		char t[] = duracion.toCharArray(); //convierte la cadena en un array de chars
 		for (int i = 0; i < t.length; i++) {
 			if (t[i] != ':') {
-				cantidadMinutos++; //cuenta los digitos de los minutos
+				cantidadMinutos++; // cuenta los digitos de los minutos
 			} else {
-				break; //en cuanto llegue a : sale del bucle
+				break; // en cuanto llegue a : sale del bucle
 			}
 		}
 
@@ -39,8 +40,8 @@ public class Ejercicio_B2 {
 		convierteMinutos = sumaMinutos * 60;
 
 		int segundos[] = new int[2];
-		segundos[0] = (t[t.length - 2] - '0') * 10;
-		segundos[1] = t[t.length - 1] - '0';
+		segundos[0] = (t[t.length - 2] - '0') * 10;// al restar '0' lo convierte en int
+		segundos[1] = t[t.length - 1] - '0';// al restar '0' lo convierte en int
 
 		sumaSegundos = segundos[0] + segundos[1];
 
