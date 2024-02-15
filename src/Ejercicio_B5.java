@@ -23,7 +23,7 @@ public class Ejercicio_B5 {// Escribe una función que tome como parámetro una 
 
 			if (temp[i] != ' ') {
 				temp[i] = Character.toUpperCase(temp[i]);
-				resultado[i] = new String(temp);
+				resultado[i] = new String(temp);// almacena la cadena actualizada en la posición i
 			} else {
 				resultado[i] = cadena;
 			}
